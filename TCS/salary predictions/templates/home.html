@@ -1,0 +1,52 @@
+<html lang='en'>
+<head>
+    <title> Hr Prediction form</title>
+    <section contenteditable="true"><h3>Department ID -<ol type="a"><li>Admin Offices:1</li><li>Executive Office:2</li><li>IT-IS:3</li><li>Software Engineering:4</li><li>Production:5</li><li>sales:6</li></h3>
+    <h3>Gender<ol type='a'><li>1-male</li><li>0-Female</li></ol></h3></section>
+    <link rel="stylesheet" href="/static/CSS/style.css"></link>
+</head>
+<body background ="/static/Images/hr.jpg">
+    <div class = "input form">
+    <form action ="{{url_for("predict")}}" method ="post" id="input head">
+        <h1 id ="heading">Hr Prediction form</h1>
+        
+        <tr>
+            <td><label for="EmpID">Employee ID: </label></td>
+            <td><input id="EmpID" maxlength="5" name="SL" type="number" placeholder="EmpID" min="10000" max="10311" required></td>
+        </tr>
+        <br>
+        <tr>
+            <label for="GenderID">Choose a Gender:</label>
+            <select name="GenderID" id="GenderID" required>
+            <option disabled hidden selected>Select</option>
+            <option value="1">1</option>
+            <option value="0">0</option>
+        </select>
+        </tr>
+            <br>
+        <tr>
+            <td><label for="DeptID">DeptID : </label></td>
+            <select name="DeptID" id="DeptID" required>
+                <option disabled hidden selected>Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option></select>
+        </tr>
+            <br>
+        <tr>
+            <td><label for="PerfScoreID">Performance Score: </label></td>
+            <select name="PerfScoreID" id="PerfScoreID" required>
+                <option disabled hidden selected>Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option></select>
+        </tr><tr><br><br>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+    </div>
+</body>
+</html>
