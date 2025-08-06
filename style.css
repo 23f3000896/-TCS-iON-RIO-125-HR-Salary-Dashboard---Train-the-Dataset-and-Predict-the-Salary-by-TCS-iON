@@ -1,0 +1,57 @@
+html{width: 100%;height: 100%;overflow: hidden;}
+.input form{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    text-align: center;
+    width: 400px;
+    height: 250px;
+    color: white;
+    padding: 10px;
+    border:2px;
+    background-color: rgb(36, 63, 91);
+    margin: -150px 0 0 -150px;
+}
+body{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+section{
+    color:rgb(177, 208, 242);
+    padding: auto;
+    background-color: rgb(36, 63, 91);
+    width: 400px;
+    height: 350px;
+    
+}
+#heading{
+    color: rgb(91, 105, 212);
+}
+#submit{
+    border:2px;
+    background-color: rgb(95, 177, 224);
+    color: white ;
+    font-size: 20px;
+    border-radius:4px;
+    width:100px;
+    height:25px;
+}
+#submit:hover{
+    background-color:rgb(160, 255, 122);
+    transition: .5s ease-in-out;
+    color:rgb(147, 172, 213);
+}
+input[type=number]:focus {
+    font-size: 20px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px;
+    height:25px;
+}
+img{
+    width: 100%;
+    height:100%
+}
